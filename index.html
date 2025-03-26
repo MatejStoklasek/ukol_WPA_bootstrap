@@ -24,7 +24,7 @@
         </div>
     </div>
 </nav>
-<header class="text-center py-lg-5 py-3">
+<header class="text-center py-5">
     <div class="container text-center">
         <h1>Úvodní sekce</h1>
         <p class="lead">text ,který má upoutat návštěvníka</p>
@@ -32,7 +32,7 @@
         <a href="#nabidka" class="btn btn-light btn-outline-dark">Nabídka služeb</a>
     </div>
 </header>
-<section id="onas" class="py-4 bg-light ">
+<section id="onas" class="py-5 bg-light ">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
@@ -46,9 +46,9 @@
         </div>
     </div>
 </section>
-<section id="nabidka" class="py-5 bg-light">
+<section id="nabidka" class="y-5 bg-light">
     <div class="container text-center">
-        <h2>Nabídka služeb</h2>
+        <h2 class="p-5">Nabídka služeb</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
@@ -105,8 +105,52 @@
         </form>
     </div>
 </section>
-<section></section>
-
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center">Často kladené otázky</h2>
+        <div class="accordion " id="faq_parent">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq_1" type="button"
+                            data-bs-parent="#faq_parent">
+                        Jaké služby nabízíme
+                    </button>
+                </h2>
+                <div id="faq_1" class="accordion-collapse collapse show"></div>
+                <div class="accordion-body">
+                    informace o službě nebo produktu
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq_2" type="button"
+                            data-bs-parent="#faq_parent">
+                        Jaké služby nabízíme
+                    </button>
+                </h2>
+                <div id="faq_2" class="accordion-collapse collapse show"></div>
+                <div class="accordion-body">
+                    informace o službě nebo produktu
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq_3" type="button"
+                            data-bs-parent="#faq_parent">
+                        Jaké služby nabízíme
+                    </button>
+                </h2>
+                <div id="faq_3" class="accordion-collapse collapse show"></div>
+                <div class="accordion-body">
+                    informace o službě nebo produktu
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-dark text-center py-4 text-white">
+    <p>Vytvořil: Matěj Stoklásek</p>
+</footer>
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
