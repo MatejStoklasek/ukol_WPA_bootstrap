@@ -7,9 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-title, .card-text {
+            font-size: 1rem;
+        }
+
+        .accordion-button {
+            background-color: #7B3F00;
+            color: #000;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #6F4E37;
+            color: #000;
+        }
+
+        .accordion-body {
+            background-color: #C19A6B;
+            color: #222;
+        }
+
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand bg-light shadow-lg">
+<nav class="navbar navbar-expand shadow-lg b" style="background-color: #DAA06D">
     <div class="container justify-content-center">
         <div class="collapse navbar-collapse justify-content-start" id="mainNav">
             <ul class="navbar-nav">
@@ -19,7 +45,8 @@
             </ul>
 
         </div>
-        <a class="navbar-brand navbar-collapse collapse m-0 justify-content-center " href="index.html"><img src="logo_upravené.jpg" class="rounded-5" height="50%" width="50%"/></a>
+        <a class="navbar-brand navbar-collapse collapse m-0 justify-content-center " href="index.html"><img
+                src="logo_upravené.jpg" class="rounded-5" height="50%" width="50%"/></a>
         <div class="collapse navbar-collapse justify-content-end" id="#mainNav">
 
             <ul class="navbar-nav">
@@ -29,7 +56,7 @@
         </div>
     </div>
 </nav>
-<header class="text-center py-5">
+<header class="text-center py-5" style="background-color: #EADDCA">
     <div class="container text-center">
         <h1>Úvodní sekce</h1>
         <p class="lead">text ,který má upoutat návštěvníka</p>
@@ -37,7 +64,7 @@
         <a href="#nabidka" class="btn btn-light btn-outline-dark">Nabídka služeb</a>
     </div>
 </header>
-<section id="onas" class="p-3 y-5 bg-light ">
+<section id="onas" class="p-3 y-5" style="background-color: #DAA06D">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
@@ -46,57 +73,59 @@
                 <p>Další informace ,nebo cíle</p>
             </div>
             <div class="col-md-6">
-                <img src="https://placehold.co/600x400" alt="O nás" class="img-fluid rounded">
+                <img src="Interiér_kavárna.webp" alt="O nás" class="img-fluid rounded">
             </div>
         </div>
     </div>
 </section>
-<section id="nabidka" class="p-5 bg-light">
+<section id="nabidka" style="background-color: #EADDCA" class="p-5">
     <div class="container text-center">
-        <h2 class="p-5">Nabídka služeb</h2>
-        <div class="row">
+        <h2 class="p-5">Základní nabítka nápojů</h2>
+        <div class="row g-4">
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card">
-                    <img src="https://placehold.co/300x200">
-                    <div class="card-body">
-                        <h5 class="card-title">1. služba</h5>
-                        <p class="card-text">Krátký popis služby</p>
-                        <p class="">Cena: Kč</p>
-                        <a href="#" class="btn btn-secondary">Koupit</a>
+                <div class="card h-100 d-flex flex-column">
+                    <img src="espresso.gif" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Espresso</h5>
+                        <p class="card-text">30ml lahodné kávy původem z Itálie.</p>
+                        <p class="card-text">Cena: 40Kč</p>
+                        <a href="#" class="btn mt-auto"
+                           style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card">
-                    <img src="https://placehold.co/300x200">
-                    <div class="card-body">
-                        <h5 class="card-title">2. služba</h5>
-                        <p class="card-text">Krátký popis služby</p>
-                        <p class="">Cena: Kč</p>
-                        <a href="#" class="btn btn-secondary">Koupit</a>
+                <div class="card h-100">
+                    <img src="cappuccino.jpg" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <p class="card-text">200ml lahodné kávy původem z Itálie.</p>
+                        <p class="card-text">Cena: 50Kč</p>
+                        <a href="#" class="btn mt-auto"
+                           style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card">
-                    <img src="https://placehold.co/300x200">
-                    <div class="card-body">
-                        <h5 class="card-title">3. služba</h5>
-                        <p class="card-text">Krátký popis služby</p>
-                        <p class="">Cena: Kč</p>
-                        <a href="#" class="btn btn-secondary">Koupit</a>
+                <div class="card h-100 d-flex flex-column">
+                    <img src="matcha_latte.jpg" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Matcha late</h5>
+                        <p class="card-text">400ml kvalitní matcha late původem z Japonska.</p>
+                        <p class="card-text">Cena: 80Kč</p>
+                        <a href="#" class="btn mt-auto"
+                           style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
-<section class="py-5">
+<section class="py-3" style="background-color: #DAA06D">
     <div class="container">
-        <h2 class="text-center">Kontaktujte nás</h2>
+        <h2 class="text-center p-lg-5">Kontaktujte nás</h2>
         <form>
             <div class="row mb-3">
-                <div class="col-md-6">
+                <div class="col-md-6 py-1">
                     <input type="text" class="form-control" placeholder="Jméno">
                 </div>
                 <div class="col-md-6">
@@ -106,49 +135,57 @@
             <div class="mb-3">
                 <textarea class="form-control" rows="4" placeholder="Vaše zpráva"></textarea>
             </div>
-            <button type="submit" class="btn btn-secondary w-100 ">Odeslat</button>
+            <button type="submit" class="btn w-100 " style="background-color: saddlebrown;color: lightgoldenrodyellow">
+                Odeslat
+            </button>
         </form>
     </div>
 </section>
-<section class="py-5">
+<section class="py-3" style="background-color: #EADDCA">
     <div class="container">
-        <h2 class="text-center">Často kladené otázky</h2>
+        <h2 class="text-center p-lg-5">Často kladené otázky</h2>
         <div class="accordion " id="faq_parent">
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq_1" type="button"
+                    <button class="accordion-button collapsed text-light" data-bs-toggle="collapse"
+                            data-bs-target="#faq_1"
+                            type="button"
                             data-bs-parent="#faq_parent">
                         Jaké služby nabízíme
                     </button>
                 </h2>
-                <div id="faq_1" class="accordion-collapse collapse show"></div>
-                <div class="accordion-body">
-                    informace o službě nebo produktu
+                <div id="faq_1" class="accordion-collapse collapse">
+                    <div class="accordion-body">informace o službě nebo produktu</div>
                 </div>
+
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq_2" type="button"
+                    <button class="accordion-button collapsed text-light" data-bs-toggle="collapse"
+                            data-bs-target="#faq_2"
+                            type="button"
                             data-bs-parent="#faq_parent">
                         Jaké služby nabízíme
                     </button>
                 </h2>
-                <div id="faq_2" class="accordion-collapse collapse show"></div>
-                <div class="accordion-body">
-                    informace o službě nebo produktu
+                <div id="faq_2" class="accordion-collapse collapse">
+                    <div class="accordion-body">informace o službě nebo produktu</div>
                 </div>
+
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq_3" type="button"
+                    <button class="accordion-button collapsed text-light" data-bs-toggle="collapse"
+                            data-bs-target="#faq_3"
+                            type="button"
                             data-bs-parent="#faq_parent">
                         Jaké služby nabízíme
                     </button>
                 </h2>
-                <div id="faq_3" class="accordion-collapse collapse show"></div>
-                <div class="accordion-body">
-                    informace o službě nebo produktu
+                <div id="faq_3" class="accordion-collapse collapse">
+                    <div class="accordion-body">informace o službě nebo produktu</div>
                 </div>
+
             </div>
         </div>
     </div>
