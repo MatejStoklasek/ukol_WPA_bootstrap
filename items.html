@@ -7,6 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title, .card-text {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand bg-light shadow-lg">
@@ -19,12 +29,7 @@
             </ul>
 
         </div>
-        <a class="navbar-brand navbar-collapse collapse m-0 justify-content-center " href="index.html"><img src="logo_upravené.jpg" class="rounded-5"
-                                                                                                       height="50%" width="50%"/></a>
-        <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>-->
-
+        <a class="navbar-brand navbar-collapse collapse m-0 justify-content-center " href="index.html"><img src="logo_upravené.jpg" class="rounded-5" height="50%" width="50%"/></a>
         <div class="collapse navbar-collapse justify-content-end" id="#mainNav">
 
             <ul class="navbar-nav">
@@ -39,105 +44,105 @@
         <h1>Služby/Produkty</h1>
     </div>
 </header>
-<section id="nabidka" class="py-5 bg-light">
+<section id="nabidka" class="py-5" style="background-color: #EADDCA">
     <div class="container text-center">
-        <div class="row">
+        <div class="row g-4">
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card">
-                    <img src="espresso.gif" height="auto" width="auto"/>
-                    <div class="card-body">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="espresso.gif" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Espresso</h5>
                         <p class="card-text">30ml lahodné kávy původem z Itálie.</p>
-                        <p class="">Cena: 40Kč</p>
-                        <a href="#" class="btn" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
+                        <p class="card-text">Cena: 40Kč</p>
+                        <a href="#" class="btn mt-auto" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card">
-                    <img src="cappuccino.jpg" height="auto" width="auto"/>
-                    <div class="card-body">
+                <div class="card h-100">
+                    <img src="cappuccino.jpg" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Cappuccino</h5>
                         <p class="card-text">200ml lahodné kávy původem z Itálie.</p>
-                        <p class="">Cena: 50Kč</p>
-                        <a href="#" class="btn" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
+                        <p class="card-text">Cena: 50Kč</p>
+                        <a href="#" class="btn mt-auto" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card">
-                    <img src="matcha_latte.jpg" height="auto" width="auto"/>
-                    <div class="card-body">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="matcha_latte.jpg" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Matcha late</h5>
                         <p class="card-text">400ml kvalitní matcha late původem z Japonska.</p>
-                        <p class="">Cena: 80Kč</p>
-                        <a href="#" class="btn" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
+                        <p class="card-text">Cena: 80Kč</p>
+                        <a href="#" class="btn mt-auto" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card">
-                    <img src="Flat_white.jpg" height="auto" width="auto"/>
-                    <div class="card-body">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="Flat_white.jpg" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Flat White</h5>
                         <p class="card-text">180ml kvalitní Flat White late původem z Austrálie nebo Nového Zélandu.</p>
-                        <p class="">Cena: 65Kč</p>
-                        <a href="#" class="btn" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
+                        <p class="card-text">Cena: 65Kč</p>
+                        <a href="#" class="btn mt-auto" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card">
-                    <img src="Pu-erhy_tea.webp" height="auto" width="auto"/>
-                    <div class="card-body">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="Pu-erhy_tea.webp" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Pu-erh (fermentovaný čaj z Číny)</h5>
                         <p class="card-text">750ml velmi kvalitní a velmi starý, protože čím starší,tím lepší.</p>
-                        <p class="">Cena: 75Kč</p>
-                        <a href="#" class="btn" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
+                        <p class="card-text">Cena: 75Kč</p>
+                        <a href="#" class="btn mt-auto" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card">
-                    <img src="oolong_tea.webp" height="auto" width="auto"/>
-                    <div class="card-body">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="oolong_tea.webp" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Oolong (polozelený čaj)</h5>
                         <p class="card-text">600ml kvalitní čaj. Chuťově někde mezi zeleným a černým čajem.</p>
-                        <p class="">Cena: 65Kč</p>
-                        <a href="#" class="btn" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
+                        <p class="card-text">Cena: 65Kč</p>
+                        <a href="#" class="btn mt-auto" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card" style="width: 400px;height: 500px">
-                    <img src="cortado.jpg" height="270px" width="auto"/>
-                    <div class="card-body">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="cortado.jpg" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Cortado</h5>
                         <p class="card-text">100ml kvalitní kávy původem ze Španělska</p>
-                        <p class="">Cena: 65Kč</p>
-                        <a href="#" class="btn" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
+                        <p class="card-text">Cena: 65Kč</p>
+                        <a href="#" class="btn mt-auto" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card" style="width: 400px;height: 500px">
-                    <img src="espresso_tonic.jpg" height="auto" width="auto"/>
-                    <div class="card-body">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="espresso_tonic.jpg" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Espresso tonic</h5>
                         <p class="card-text">400ml. Moderní osvěžující nápoj.</p>
-                        <p class="">Cena: 100Kč</p>
-                        <a href="#" class="btn" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
+                        <p class="card-text">Cena: 100Kč</p>
+                        <a href="#" class="btn mt-auto" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 py-2">
-                <div class="card" style="width: 400px;height: 500px">
-                    <img src="irish-coffee.jpg" height="auto" width="auto"/>
-                    <div class="card-body">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="irish-coffee.jpg" class="card-img-top"/>
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Irish coffee</h5>
                         <p class="card-text">200ml. Kombinace kávy, irské whiskey, cukru a smetany.</p>
-                        <p class="">Cena: 150Kč</p>
-                        <a href="#" class="btn " style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
+                        <p class="card-text">Cena: 150Kč</p>
+                        <a href="#" class="btn mt-auto" style="background-color: saddlebrown;color: lightgoldenrodyellow">Koupit</a>
                     </div>
                 </div>
             </div>
