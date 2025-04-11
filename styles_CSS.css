@@ -1,0 +1,24 @@
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-title, .card-text {
+    font-size: 1rem;
+}
+
+.accordion-button {
+    background-color: #7B3F00;
+    color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #6F4E37;
+    color: #000;
+}
+
+.accordion-body {
+    background-color: #C19A6B;
+    color: #222;
+}
